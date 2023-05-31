@@ -20,7 +20,7 @@ CottageCheese::CottageCheese(string tipo, float peso, double valor) : Cheese(tip
    
 string CottageCheese::getDescricao()
    {
-   return ("Queijo cottage" + tipo + " - " + to_string(peso) + " Kg.");
+   return ("Queijo cottage " + tipo + " - " + to_string(peso) + " Kg.");
    };
    
 /* fim de arquivo */
