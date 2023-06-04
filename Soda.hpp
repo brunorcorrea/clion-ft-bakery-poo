@@ -20,7 +20,7 @@ private:
 public:
     Soda(string, string, double, double);
 
-    virtual string getDescricao();
+    string getDescricao();
 };
 
 #endif

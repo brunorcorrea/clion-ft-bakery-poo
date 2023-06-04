@@ -20,7 +20,7 @@ private:
 public:
     PilsenBeer(string, double, string, double, double);
 
-    virtual string getDescricao();
+    string getDescricao();
 };
 
 #endif

@@ -21,7 +21,7 @@ private:
 public:
     Bread(string, float, double);
 
-    virtual string getDescricao();
+    string getDescricao();
 };
 
 #endif
