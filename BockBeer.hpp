@@ -22,9 +22,7 @@ private:
 public:
     BockBeer(string, double, string, double, double);
 
-    virtual string getDescricao();
-
-    string getVariacao();
+    string getDescricao();
 };
 
 #endif

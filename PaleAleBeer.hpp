@@ -23,8 +23,6 @@ public:
     PaleAleBeer(string, double, string, double, double);
 
     virtual string getDescricao();
-
-    string getVariacao();
 };
 
 #endif

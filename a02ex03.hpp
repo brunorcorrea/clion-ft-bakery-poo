@@ -5,8 +5,6 @@
    Mar/2016
 */
 
-using namespace std;
-
 #ifndef A02EX03_H
 #define A02EX03_H
 

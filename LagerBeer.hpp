@@ -23,8 +23,6 @@ public:
     LagerBeer(string, double, string, double, double);
 
     virtual string getDescricao();
-
-    string getVariacao();
 };
 
 #endif
