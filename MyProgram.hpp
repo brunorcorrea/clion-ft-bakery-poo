@@ -13,33 +13,49 @@
 using namespace std;
 
 class MyProgram {
-    private:
-        MyBooleanClass *verboseMode = NULL;
-        MyBooleanClass *shortMessageMode = NULL;
+private:
+    MyBooleanClass *verboseMode = NULL;
+    MyBooleanClass *shortMessageMode = NULL;
 
-        vector<Food *> myMainList;
+    vector<Food *> myMainList;
 
-        void process(void);
+    void process(void);
 
-        void clearAll(void);
+    void clearAll(void);
 
-        void listItems(void);
+    void listItems(void);
 
-        void insertItems(void);
+    void insertItems(void);
 
-        void insertBread(void);
+    void insertBread(void);
 
-        void insertCracker(void);
+    void insertCracker(void);
 
-        void insertFilledWafer(void);
+    void insertFilledWafer(void);
 
-        void insertCheese(void);
+    void insertCheese(void);
 
-        void insertCottageCheese(void);
+    void insertCottageCheese(void);
 
-        void insertHam(void);
+    void insertHam(void);
 
-        void insertMortadella(void);
+    void insertMortadella(void);
+
+    void insertMilk(void);
+
+    void insertWater(void);
+
+    void insertSoda(void);
+
+    void insertBeer(void);
+
+    void insertBockBeer(void);
+
+    void insertLagerBeer(void);
+
+    void insertPaleAleBeer(void);
+
+    void insertPilsenBeer(void);
 
 public:
     MyBooleanClass *getVerboseMode() const;

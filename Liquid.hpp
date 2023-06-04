@@ -13,19 +13,17 @@
 
 using namespace std;
 
-class Liquid : Food {
+class Liquid : public Food {
 protected:
     string marca;
     double volume;
 
 public:
-    Liquid(string, int, double);
+    Liquid(string, double, double);
 
     virtual double getVolume();
 
     string getMarca();
-
-//    virtual string getDescricao() = 0; TODO is it necessary?
 };
 
 #endif

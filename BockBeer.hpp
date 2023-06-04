@@ -17,7 +17,7 @@ using namespace std;
 
 class BockBeer : public Beer {
 private:
-    string variacao;
+    string tipo;
 
 public:
     BockBeer(string, double, string, double, double);
