@@ -6,11 +6,6 @@
 */
 
 #include <string>
-#include "a02ex03_b.hpp"
-#include "a02ex03_f.hpp"
-#include "Milk.hpp"
-#include "Water.hpp"
-#include "Soda.hpp"
 #include "Beer.hpp"
 
 using namespace std;

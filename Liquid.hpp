@@ -20,10 +20,6 @@ protected:
 
 public:
     Liquid(string, double, double);
-
-    virtual double getVolume();
-
-    string getMarca();
 };
 
 #endif

@@ -9,8 +9,6 @@
 #define LAGER_BEER_H
 
 #include <string>
-#include "a02ex03_b.hpp"
-#include "Liquid.hpp"
 #include "Beer.hpp"
 
 using namespace std;
@@ -22,7 +20,7 @@ private:
 public:
     LagerBeer(string, double, string, double, double);
 
-    virtual string getDescricao();
+    string getDescricao();
 };
 
 #endif

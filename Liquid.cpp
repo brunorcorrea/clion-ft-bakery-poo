@@ -16,15 +16,4 @@ Liquid::Liquid(string marca, double volume, double valor) : Food(valor) {
     this->marca = marca;
 }
 
-double Liquid::getVolume() {
-    return (volume);
-}
-
-
-string Liquid::getMarca() {
-    return (marca);
-};
-
-
-
 /* fim de arquivo */

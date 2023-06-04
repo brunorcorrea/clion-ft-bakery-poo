@@ -9,8 +9,6 @@
 #define BOCK_BEER_H
 
 #include <string>
-#include "a02ex03_b.hpp"
-#include "Liquid.hpp"
 #include "Beer.hpp"
 
 using namespace std;

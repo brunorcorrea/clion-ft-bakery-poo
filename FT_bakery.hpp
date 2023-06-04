@@ -9,8 +9,8 @@
 #include "MyProgram.hpp"
 
 class FT_bakery {
-    public:
-        static void verifyArguments(int, char *[], MyProgram*);
+public:
+    static void verifyArguments(int, char *[], MyProgram *);
 };
 
 

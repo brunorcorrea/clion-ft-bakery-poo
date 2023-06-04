@@ -9,7 +9,6 @@
 #define BEER_H
 
 #include <string>
-#include "a02ex03_b.hpp"
 #include "Liquid.hpp"
 
 using namespace std;

@@ -6,24 +6,23 @@
 */
 
 #ifndef MILK_H
-   #define MILK_H
+#define MILK_H
 
 #include <string>
-#include "a02ex03_b.hpp"
 #include "Liquid.hpp"
 
 using namespace std;
 
-class Milk : public Liquid
-   {
-   private:
-      string tipo;
+class Milk : public Liquid {
+private:
+    string tipo;
 
-   public:
+public:
     Milk(string, string, double, double);
-      virtual string getDescricao();
-   };
-   
+
+    string getDescricao();
+};
+
 #endif
-   
+
 /* fim de arquivo */
