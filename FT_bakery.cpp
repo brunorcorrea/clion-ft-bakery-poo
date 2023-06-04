@@ -6,25 +6,25 @@
 
 #include "MyProgram.hpp"
 
+using namespace std;
+
 int main(int argc, char *argv[]) {
-    MyProgram myProgram;
-    FT_bakery ftBakery;
-    ftBakery.verifyArguments(argc, argv);
-    myProgram.start(argv[0]);
+    MyProgram *myProgram = new MyProgram();
+
+    FT_bakery::verifyArguments(argc, argv, myProgram);
+
+    myProgram->start(argv[0]);
 };
 
-void FT_bakery::verifyArguments(int, char **) {
-    if (verboseMode) { delete verboseMode; };
-    if (shortMessageMode) { delete shortMessageMode; };
-
-    verboseMode = NULL;
-    shortMessageMode = NULL;
+void FT_bakery::verifyArguments(int argc, char *argv[], MyProgram *myProgram) {
+    bool verboseMode = false;
+    bool shortMessageMode = false;
 
     for (int count = 1; count < argc; count++) {
-        if (string(argv[count]) == "-v") { verboseMode = new MyBooleanClass(true); };
-        if (string(argv[count]) == "-s") { shortMessageMode = new MyBooleanClass(true); };
+        if (string(argv[count]) == "-v") { verboseMode = true; };
+        if (string(argv[count]) == "-s") { shortMessageMode = true; };
     };
 
-    if (!verboseMode) { verboseMode = new MyBooleanClass(); };  // default is false
-    if (!shortMessageMode) { shortMessageMode = new MyBooleanClass(); };  // default is false
+    myProgram->setVerboseMode(new MyBooleanClass(verboseMode));
+    myProgram->setShortMessageMode(new MyBooleanClass(shortMessageMode));
 }

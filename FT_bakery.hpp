@@ -6,9 +6,11 @@
 #define CLION_FT_BAKERY_POO_FT_BAKERY_HPP
 
 
+#include "MyProgram.hpp"
+
 class FT_bakery {
     public:
-        void verifyArguments(int, char *[]);
+        static void verifyArguments(int, char *[], MyProgram*);
 };
 
 
