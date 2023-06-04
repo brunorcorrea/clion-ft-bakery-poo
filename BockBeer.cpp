@@ -1,9 +1,6 @@
-/* Unicamp - Universidade Estadual de Campinas
-   FT - Faculdade de Tecnologia
-   Limeira - SP
-   Prof. Dr. Andre F. de Angelis
-   Maio/2015
-*/
+//
+// Created by corre on 6/2/2023.
+//
 
 #include <string>
 #include "BockBeer.hpp"
@@ -19,5 +16,3 @@ BockBeer::BockBeer(string tipo, double teorAlcoolico, string marca, double volum
 string BockBeer::getDescricao() {
     return ("Cerveja Bock " + tipo + " " + marca + " " + to_string(teorAlcoolico) + "% - " + to_string(volume) + " L.");
 };
-
-/* fim de arquivo */

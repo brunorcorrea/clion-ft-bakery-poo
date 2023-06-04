@@ -1,9 +1,6 @@
-/* Unicamp - Universidade Estadual de Campinas
-   FT - Faculdade de Tecnologia
-   Limeira - SP
-   Prof. Dr. Andre F. de Angelis
-   Maio/2015
-*/
+//
+// Created by corre on 6/2/2023.
+//
 
 #include <string>
 #include "a02ex03_b.hpp"
@@ -19,5 +16,3 @@ Cheese::Cheese(string tipo, float peso, double valor) : Food(valor) {
 string Cheese::getDescricao() {
     return ("Queijo " + tipo + " - " + to_string(peso) + " Kg.");
 };
-
-/* fim de arquivo */

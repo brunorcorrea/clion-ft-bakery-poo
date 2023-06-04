@@ -1,9 +1,6 @@
-/* Unicamp - Universidade Estadual de Campinas
-   FT - Faculdade de Tecnologia
-   Limeira - SP
-   Prof. Dr. Andre F. de Angelis
-   Maio/2015
-*/
+//
+// Created by corre on 6/2/2023.
+//
 
 #ifndef LAGER_BEER_H
 #define LAGER_BEER_H
@@ -24,5 +21,3 @@ public:
 };
 
 #endif
-
-/* fim de arquivo */

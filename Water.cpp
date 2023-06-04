@@ -1,9 +1,6 @@
-/* Unicamp - Universidade Estadual de Campinas
-   FT - Faculdade de Tecnologia
-   Limeira - SP
-   Prof. Dr. Andre F. de Angelis
-   Maio/2015
-*/
+//
+// Created by corre on 6/2/2023.
+//
 
 #include <string>
 #include "Water.hpp"
@@ -17,5 +14,3 @@ Water::Water(string nome, string marca, double volume, double valor) : Liquid(ma
 string Water::getDescricao() {
     return ("Água " + nome + " " + marca + " - " + to_string(volume) + " L.");
 };
-
-/* fim de arquivo */

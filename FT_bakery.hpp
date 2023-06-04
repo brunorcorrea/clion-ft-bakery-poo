@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef CLION_FT_BAKERY_POO_FT_BAKERY_HPP
-#define CLION_FT_BAKERY_POO_FT_BAKERY_HPP
+#ifndef FT_BAKERY_HPP
+#define FT_BAKERY_HPP
 
 
 #include "MyProgram.hpp"
@@ -14,4 +14,4 @@ public:
 };
 
 
-#endif //CLION_FT_BAKERY_POO_FT_BAKERY_HPP
+#endif //FT_BAKERY_HPP

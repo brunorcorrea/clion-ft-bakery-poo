@@ -1,9 +1,6 @@
-/* Unicamp - Universidade Estadual de Campinas
-   FT - Faculdade de Tecnologia
-   Limeira - SP
-   Prof. Dr. Andre F. de Angelis
-   Maio/2015
-*/
+//
+// Created by corre on 6/2/2023.
+//
 
 #include <string>
 #include "Soda.hpp"
@@ -17,5 +14,3 @@ Soda::Soda(string sabor, string marca, double volume, double valor) : Liquid(mar
 string Soda::getDescricao() {
     return (marca + " " + sabor + " - " + to_string(volume) + " L.");
 };
-
-/* fim de arquivo */
