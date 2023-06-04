@@ -8,7 +8,7 @@
 
 #include <string>
 #include "Cheese.hpp"
-#include "a02ex03_g.hpp"
+#include "CottageCheese.hpp"
 
 using namespace std;
 
