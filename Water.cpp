@@ -18,7 +18,7 @@ Water::Water(string nome, string marca, double volume, double valor) : Liquid(ma
 };
 
 string Water::getDescricao() {
-    return (nome + " " + marca + " - " + to_string(volume) + " L.");
+    return ("Água " + nome + " " + marca + " - " + to_string(volume) + " L.");
 };
 
 /* fim de arquivo */
