@@ -7,7 +7,7 @@
 
 #include <string>
 #include "a02ex03_b.hpp"
-#include "a02ex03_h.hpp"
+#include "Ham.hpp"
 
 using namespace std;
 

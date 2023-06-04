@@ -17,7 +17,7 @@
 #include "a02ex03_e.hpp"
 #include "Cheese.hpp"
 #include "CottageCheese.hpp"
-#include "a02ex03_h.hpp"
+#include "Ham.hpp"
 #include "a02ex03_i.hpp"
 #include "BockBeer.hpp"
 #include "LagerBeer.hpp"
