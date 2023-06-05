@@ -19,43 +19,43 @@ private:
 
     vector<Food *> myMainList;
 
-    void process(void);
+    void process();
 
-    void clearAll(void);
+    void clearAll();
 
-    void listItems(void);
+    void listItems();
 
-    void insertItems(void);
+    void insertItems();
 
-    void insertBread(void);
+    void insertBread();
 
-    void insertCracker(void);
+    void insertCracker();
 
-    void insertFilledWafer(void);
+    void insertFilledWafer();
 
-    void insertCheese(void);
+    void insertCheese();
 
-    void insertCottageCheese(void);
+    void insertCottageCheese();
 
-    void insertHam(void);
+    void insertHam();
 
-    void insertMortadella(void);
+    void insertMortadella();
 
-    void insertMilk(void);
+    void insertMilk();
 
-    void insertWater(void);
+    void insertWater();
 
-    void insertSoda(void);
+    void insertSoda();
 
-    void insertBeer(void);
+    void insertBeer();
 
-    void insertBockBeer(void);
+    void insertBockBeer();
 
-    void insertLagerBeer(void);
+    void insertLagerBeer();
 
-    void insertPaleAleBeer(void);
+    void insertPaleAleBeer();
 
-    void insertPilsenBeer(void);
+    void insertPilsenBeer();
 
 public:
     MyBoolean *getVerboseMode() const;

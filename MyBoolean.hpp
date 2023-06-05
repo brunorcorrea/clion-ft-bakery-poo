@@ -19,7 +19,7 @@ public:
 
     ~MyBoolean();
 
-    const bool getStatus(void);
+    const bool getStatus();
 };
 
 #endif
