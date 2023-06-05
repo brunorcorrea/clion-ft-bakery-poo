@@ -7,8 +7,8 @@
 
 #include <vector>
 
-#include "a02ex01_a.hpp"
-#include "a02ex03_b.hpp"
+#include "MyBooleanClass.hpp"
+#include "Food.hpp"
 
 using namespace std;
 

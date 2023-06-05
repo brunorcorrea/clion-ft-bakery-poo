@@ -3,7 +3,7 @@
 //
 
 #include <string>
-#include "a02ex03_b.hpp"
+#include "Food.hpp"
 #include "Cheese.hpp"
 
 using namespace std;

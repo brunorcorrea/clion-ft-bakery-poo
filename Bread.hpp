@@ -5,20 +5,21 @@
    Maio/2015
 */
 
-#ifndef A02EX03_E_H
-#define A02EX03_E_H
+#ifndef A02EX03_C_H
+#define A02EX03_C_H
 
 #include <string>
-#include "a02ex03_d.hpp"
+#include "Food.hpp"
 
 using namespace std;
 
-class FilledWafer : public Cracker {
+class Bread : public Food {
 private:
-    string recheio;
+    string tipo;
+    float peso;
 
 public:
-    FilledWafer(string, string, int, double);
+    Bread(string, float, double);
 
     string getDescricao();
 };

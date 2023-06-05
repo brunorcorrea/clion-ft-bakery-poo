@@ -6,7 +6,7 @@
 #define A02EX03_H_H
 
 #include <string>
-#include "a02ex03_b.hpp"
+#include "Food.hpp"
 
 using namespace std;
 

@@ -6,8 +6,8 @@
 */
 
 #include <string>
-#include "a02ex03_b.hpp"
-#include "a02ex03_d.hpp"
+#include "Food.hpp"
+#include "Cracker.hpp"
 
 using namespace std;
 

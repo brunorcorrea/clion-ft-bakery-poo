@@ -6,8 +6,8 @@
 */
 
 #include <string>
-#include "a02ex03_d.hpp"
-#include "a02ex03_e.hpp"
+#include "Cracker.hpp"
+#include "FilledWafer.hpp"
 
 using namespace std;
 

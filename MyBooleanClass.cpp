@@ -5,7 +5,7 @@
    Mar/2016
 */
 
-#include "a02ex01_a.hpp"
+#include "MyBooleanClass.hpp"
 
    MyBooleanClass::MyBooleanClass()            { booleanValue = false;  };
    MyBooleanClass::MyBooleanClass(bool value ) { booleanValue = value;  };
