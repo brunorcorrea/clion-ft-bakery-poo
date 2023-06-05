@@ -53,7 +53,7 @@ void MyProgram::process() {
 void MyProgram::clearAll() {
     myMainList.clear();
 
-    vector<Food *>::iterator scan = myMainList.begin();
+    auto scan = myMainList.begin();
 
     while (scan != myMainList.end()) {
         delete (*scan);
@@ -71,7 +71,7 @@ void MyProgram::listItems() {
     double total = 0.00;
 
     cout << "------------------------------\nItems in Database:\n------------------------------\n";
-    vector<Food *>::iterator scan = myMainList.begin();
+    auto scan = myMainList.begin();
 
     while (scan != myMainList.end()) {
         cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2)

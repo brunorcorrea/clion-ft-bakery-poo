@@ -22,6 +22,8 @@ public:
     virtual double getValor();
 
     virtual string getDescricao() = 0;
+
+    virtual ~Food();
 };
 
 #endif

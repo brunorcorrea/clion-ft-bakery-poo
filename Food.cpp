@@ -15,6 +15,8 @@ Food::Food(double valor) {
 
 double Food::getValor() {
     return (valor);
-};
+}
+
+Food::~ Food() = default;
 
 /* fim de arquivo */
