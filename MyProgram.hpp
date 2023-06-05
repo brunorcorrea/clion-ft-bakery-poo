@@ -60,11 +60,11 @@ private:
 public:
     MyBoolean *getVerboseMode() const;
 
-    void setVerboseMode(MyBoolean *verboseMode);
+    void setVerboseMode(MyBoolean *);
 
     MyBoolean *getShortMessageMode() const;
 
-    void setShortMessageMode(MyBoolean *shortMessageMode);
+    void setShortMessageMode(MyBoolean *);
 
     void start(string programName);
 };

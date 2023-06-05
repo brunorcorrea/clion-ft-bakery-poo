@@ -613,16 +613,16 @@ MyBoolean *MyProgram::getVerboseMode() const {
     return verboseMode;
 }
 
-void MyProgram::setVerboseMode(MyBoolean *verboseMode) {
-    MyProgram::verboseMode = verboseMode;
+void MyProgram::setVerboseMode(MyBoolean *value) {
+    MyProgram::verboseMode = value;
 }
 
 MyBoolean *MyProgram::getShortMessageMode() const {
     return shortMessageMode;
 }
 
-void MyProgram::setShortMessageMode(MyBoolean *shortMessageMode) {
-    MyProgram::shortMessageMode = shortMessageMode;
+void MyProgram::setShortMessageMode(MyBoolean *value) {
+    MyProgram::shortMessageMode = value;
 }
 
 void MyProgram::start(string programName) {
