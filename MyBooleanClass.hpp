@@ -5,8 +5,8 @@
    Mar/2016
 */
 
-#ifndef A02EX01_A_H
-#define A02EX01_A_H
+#ifndef MY_BOOLEAN_HPP
+#define MY_BOOLEAN_HPP
 
 class MyBooleanClass {
 private:

@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef WATER_H
-#define WATER_H
+#ifndef WATER_HPP
+#define WATER_HPP
 
 #include <string>
 #include "Liquid.hpp"

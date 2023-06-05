@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef BEER_H
-#define BEER_H
+#ifndef BEER_HPP
+#define BEER_HPP
 
 #include <string>
 #include "Liquid.hpp"

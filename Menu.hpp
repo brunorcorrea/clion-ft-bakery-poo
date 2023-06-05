@@ -5,8 +5,8 @@
    Maio/2015
 */
 
-#ifndef A02EX03_A_H
-   #define A02EX03_A_H
+#ifndef MENU_HPP
+   #define MENU_HPP
 
 #include <string>
 #include <vector>

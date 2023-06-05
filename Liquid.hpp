@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef LIQUID_H
-#define LIQUID_H
+#ifndef LIQUID_HPP
+#define LIQUID_HPP
 
 #include <string>
 #include "Food.hpp"

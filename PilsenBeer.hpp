@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef PILSEN_BEER_H
-#define PILSEN_BEER_H
+#ifndef PILSEN_BEER_HPP
+#define PILSEN_BEER_HPP
 
 #include <string>
 #include "Beer.hpp"

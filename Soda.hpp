@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef SODA_H
-#define SODA_H
+#ifndef SODA_HPP
+#define SODA_HPP
 
 #include <string>
 #include "Liquid.hpp"

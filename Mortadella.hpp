@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef A02EX03_I_H
-#define A02EX03_I_H
+#ifndef MORTADELLA_HPP
+#define MORTADELLA_HPP
 
 #include <string>
 #include "Food.hpp"

@@ -5,8 +5,8 @@
    Maio/2015
 */
 
-#ifndef A02EX03_C_H
-#define A02EX03_C_H
+#ifndef BREAD_HPP
+#define BREAD_HPP
 
 #include <string>
 #include "Food.hpp"

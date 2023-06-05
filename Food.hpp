@@ -5,8 +5,8 @@
    Maio/2015
 */
 
-#ifndef A02EX03_B_H
-#define A02EX03_B_H
+#ifndef FOOD_HPP
+#define FOOD_HPP
 
 #include <string>
 

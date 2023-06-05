@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef LAGER_BEER_H
-#define LAGER_BEER_H
+#ifndef LAGER_BEER_HPP
+#define LAGER_BEER_HPP
 
 #include <string>
 #include "Beer.hpp"

@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef MILK_H
-#define MILK_H
+#ifndef MILK_HPP
+#define MILK_HPP
 
 #include <string>
 #include "Liquid.hpp"

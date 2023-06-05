@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef BOCK_BEER_H
-#define BOCK_BEER_H
+#ifndef BOCK_BEER_HPP
+#define BOCK_BEER_HPP
 
 #include <string>
 #include "Beer.hpp"

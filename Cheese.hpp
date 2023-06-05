@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef A02EX03_F_H
-#define A02EX03_F_H
+#ifndef CHEESE_HPP
+#define CHEESE_HPP
 
 #include <string>
 #include "Food.hpp"

@@ -5,8 +5,8 @@
    Maio/2015
 */
 
-#ifndef A02EX03_E_H
-#define A02EX03_E_H
+#ifndef FILLED_WAFER_HPP
+#define FILLED_WAFER_HPP
 
 #include <string>
 #include "Cracker.hpp"

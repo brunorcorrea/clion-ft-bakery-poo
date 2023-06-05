@@ -5,8 +5,8 @@
    Mar/2016
 */
 
-#ifndef A02EX00_H
-   #define A02EX00_H
+#ifndef INFORMATION_HPP
+   #define INFORMATION_HPP
 
 using namespace std;
    
