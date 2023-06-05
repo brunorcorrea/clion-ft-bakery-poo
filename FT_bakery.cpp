@@ -25,6 +25,6 @@ void FT_bakery::verifyArguments(int argc, char *argv[], MyProgram *myProgram) {
         if (string(argv[count]) == "-s") { shortMessageMode = true; };
     };
 
-    myProgram->setVerboseMode(new MyBooleanClass(verboseMode));
-    myProgram->setShortMessageMode(new MyBooleanClass(shortMessageMode));
+    myProgram->setVerboseMode(new MyBoolean(verboseMode));
+    myProgram->setShortMessageMode(new MyBoolean(shortMessageMode));
 }

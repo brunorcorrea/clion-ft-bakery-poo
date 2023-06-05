@@ -8,16 +8,16 @@
 #ifndef MY_BOOLEAN_HPP
 #define MY_BOOLEAN_HPP
 
-class MyBooleanClass {
+class MyBoolean {
 private:
     bool booleanValue;
 
 public:
-    MyBooleanClass();
+    MyBoolean();
 
-    MyBooleanClass(bool);
+    MyBoolean(bool);
 
-    ~MyBooleanClass();
+    ~MyBoolean();
 
     const bool getStatus(void);
 };

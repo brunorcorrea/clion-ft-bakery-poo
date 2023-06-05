@@ -9,7 +9,7 @@
 
 #include "MyProgram.hpp"
 #include "Information.hpp"
-#include "MyBooleanClass.hpp"
+#include "MyBoolean.hpp"
 #include "Menu.hpp"
 #include "Food.hpp"
 #include "Bread.hpp"
@@ -609,19 +609,19 @@ void MyProgram::insertPilsenBeer() {
          << endl;
 };
 
-MyBooleanClass *MyProgram::getVerboseMode() const {
+MyBoolean *MyProgram::getVerboseMode() const {
     return verboseMode;
 }
 
-void MyProgram::setVerboseMode(MyBooleanClass *verboseMode) {
+void MyProgram::setVerboseMode(MyBoolean *verboseMode) {
     MyProgram::verboseMode = verboseMode;
 }
 
-MyBooleanClass *MyProgram::getShortMessageMode() const {
+MyBoolean *MyProgram::getShortMessageMode() const {
     return shortMessageMode;
 }
 
-void MyProgram::setShortMessageMode(MyBooleanClass *shortMessageMode) {
+void MyProgram::setShortMessageMode(MyBoolean *shortMessageMode) {
     MyProgram::shortMessageMode = shortMessageMode;
 }
 

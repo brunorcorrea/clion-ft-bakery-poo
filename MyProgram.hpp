@@ -7,15 +7,15 @@
 
 #include <vector>
 
-#include "MyBooleanClass.hpp"
+#include "MyBoolean.hpp"
 #include "Food.hpp"
 
 using namespace std;
 
 class MyProgram {
 private:
-    MyBooleanClass *verboseMode = NULL;
-    MyBooleanClass *shortMessageMode = NULL;
+    MyBoolean *verboseMode = NULL;
+    MyBoolean *shortMessageMode = NULL;
 
     vector<Food *> myMainList;
 
@@ -58,13 +58,13 @@ private:
     void insertPilsenBeer(void);
 
 public:
-    MyBooleanClass *getVerboseMode() const;
+    MyBoolean *getVerboseMode() const;
 
-    void setVerboseMode(MyBooleanClass *verboseMode);
+    void setVerboseMode(MyBoolean *verboseMode);
 
-    MyBooleanClass *getShortMessageMode() const;
+    MyBoolean *getShortMessageMode() const;
 
-    void setShortMessageMode(MyBooleanClass *shortMessageMode);
+    void setShortMessageMode(MyBoolean *shortMessageMode);
 
     void start(string programName);
 };
