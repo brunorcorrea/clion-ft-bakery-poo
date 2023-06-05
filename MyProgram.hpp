@@ -2,8 +2,8 @@
 // Created by corre on 6/2/2023.
 //
 
-#ifndef MYPROGRAM_HPP
-#define MYPROGRAM_HPP
+#ifndef MY_PROGRAM_HPP
+#define MY_PROGRAM_HPP
 
 #include <vector>
 
@@ -70,4 +70,4 @@ public:
 };
 
 
-#endif //MYPROGRAM_HPP
+#endif //MY_PROGRAM_HPP
