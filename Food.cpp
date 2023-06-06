@@ -11,10 +11,12 @@ using namespace std;
 
 Food::Food(double cost) {
     this->cost = cost;
-};
+}
 
 double Food::getCost() {
     return (cost);
 }
+
+Food::~Food() = default;
 
 /* fim de arquivo */
