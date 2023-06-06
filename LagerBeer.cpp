@@ -3,13 +3,14 @@
 //
 
 #include <string>
+#include <utility>
 #include "LagerBeer.hpp"
 
 using namespace std;
 
 LagerBeer::LagerBeer(string style, double alcoholContent, string brand, double volume, double cost) : Beer(
-        alcoholContent, brand, volume, cost) {
-    this->style = style;
+        alcoholContent, std::move(brand), volume, cost) {
+    this->style = std::move(style);
 }
 
 string LagerBeer::getDescription() {

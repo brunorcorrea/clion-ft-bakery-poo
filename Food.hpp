@@ -17,7 +17,7 @@ protected:
     double cost;
 
 public:
-    Food(double);
+    explicit Food(double);
 
     virtual double getCost();
 

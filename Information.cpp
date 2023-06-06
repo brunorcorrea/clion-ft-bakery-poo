@@ -6,63 +6,58 @@
 */
 
 #include <iostream>
+#include <utility>
 #include "Information.hpp"
 
 using namespace std;
 
 const string Information::institution = "Unicamp - Universidade Estadual de Campinas";
-const string Information::dept        = "FT - Faculdade de Tecnologia";
-const string Information::author      = "Prof. Dr. Andre F. de Angelis";
-const string Information::date        = "Mar/2016";
-const string Information::decoration  = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
+const string Information::dept = "FT - Faculdade de Tecnologia";
+const string Information::author = "Prof. Dr. Andre F. de Angelis";
+const string Information::date = "Mar/2016";
+const string Information::decoration = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
 
-const string Information::getInstitution() { return (institution); }
-const string Information::getDept()        { return (dept);        }
-const string Information::getAuthor()      { return (author);      }
-const string Information::getDate()        { return (date);        }
+string Information::getInstitution() { return (institution); }
 
-const void Information::welcome()
-   {
-       welcome("");
-   }
+string Information::getDept() { return (dept); }
 
-const void Information::welcome(string message)
-   {
-       welcome(message, false);
-   }
-   
-const void Information::welcome(string message, bool shortMessage)
-   {
-   if(!shortMessage)
-      {
-      cout << decoration;
-      cout << Information::getInstitution() << "\n" << Information::getDept() << "\n";
-      cout << Information::getAuthor() << "\n" << Information::getDate() << "\n";
-      }
-   cout << decoration;
-   cout << message << endl;
-   }
-   
-const void Information::bye()
-   {
-   cout << decoration;
-   cout << Information::getInstitution() << " - " << Information::getDept() << endl;
-   cout << decoration;
-   cout << "Mission accomplished! \n";
-   cout << decoration;
-   cout << "\n\n" << endl;
-   }
+string Information::getAuthor() { return (author); }
 
-const void Information::bye(bool shortMessage)
-   {
-   if(shortMessage)
-      {
-      cout << "Mission accomplished! \n" << endl;
-      }
-   else
-      {
-      bye();
-      }
-   }
-   
+string Information::getDate() { return (date); }
+
+void Information::welcome() {
+    welcome("");
+}
+
+void Information::welcome(string message) {
+    welcome(std::move(message), false);
+}
+
+void Information::welcome(string message, bool shortMessage) {
+    if (!shortMessage) {
+        cout << decoration;
+        cout << Information::getInstitution() << "\n" << Information::getDept() << "\n";
+        cout << Information::getAuthor() << "\n" << Information::getDate() << "\n";
+    }
+    cout << decoration;
+    cout << message << endl;
+}
+
+void Information::bye() {
+    cout << decoration;
+    cout << Information::getInstitution() << " - " << Information::getDept() << endl;
+    cout << decoration;
+    cout << "Mission accomplished! \n";
+    cout << decoration;
+    cout << "\n\n" << endl;
+}
+
+void Information::bye(bool shortMessage) {
+    if (shortMessage) {
+        cout << "Mission accomplished! \n" << endl;
+    } else {
+        bye();
+    }
+}
+
 /* fim de arquivo */

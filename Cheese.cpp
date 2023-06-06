@@ -3,13 +3,14 @@
 //
 
 #include <string>
+#include <utility>
 #include "Food.hpp"
 #include "Cheese.hpp"
 
 using namespace std;
 
 Cheese::Cheese(string type, float weight, double cost) : Food(cost) {
-    this->type = type;
+    this->type = std::move(type);
     this->weight = weight;
 }
 

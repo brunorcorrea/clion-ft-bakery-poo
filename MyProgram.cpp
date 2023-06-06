@@ -3,6 +3,7 @@
 //
 
 #include <string>
+#include <utility>
 #include <vector>
 #include <iostream>
 #include <iomanip>
@@ -62,8 +63,8 @@ void MyProgram::clearAll() {
 
     delete verboseMode;
     delete shortMessageMode;
-    verboseMode = NULL;
-    shortMessageMode = NULL;
+    verboseMode = nullptr;
+    shortMessageMode = nullptr;
 }
 
 void MyProgram::listItems() {
@@ -453,14 +454,14 @@ void MyProgram::insertSoda() {
 }
 
 void MyProgram::insertBeer() {
-    vector<string> opcoes({"Exit", "Bock Beer", "Lager Beer", "Pale Ale Beer", "Pilsen Beer"});
-    Menu menu("Insert Beer", opcoes);
-    int escolha = -1;
+    vector<string> options({"Exit", "Bock Beer", "Lager Beer", "Pale Ale Beer", "Pilsen Beer"});
+    Menu menu("Insert Beer", options);
+    int choice = -1;
 
-    while (escolha) {
-        escolha = menu.getChoice();
+    while (choice) {
+        choice = menu.getChoice();
 
-        switch (escolha) {
+        switch (choice) {
             case 1: {
                 insertBockBeer();
             }
@@ -655,7 +656,7 @@ void MyProgram::setShortMessageMode(MyBoolean *value) {
 
 void MyProgram::start(string programName) {
     myMainList.clear();
-    Information::welcome("C++ Program " + string(programName) + " running!", shortMessageMode->getStatus());
+    Information::welcome("C++ Program " + string(std::move(programName)) + " running!", shortMessageMode->getStatus());
     process();
     Information::bye(shortMessageMode->getStatus());
     clearAll();

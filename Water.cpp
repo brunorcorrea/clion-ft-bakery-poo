@@ -3,12 +3,13 @@
 //
 
 #include <string>
+#include <utility>
 #include "Water.hpp"
 
 using namespace std;
 
-Water::Water(string type, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
-    this->type = type;
+Water::Water(string type, string brand, double volume, double cost) : Liquid(std::move(brand), volume, cost) {
+    this->type = std::move(type);
 }
 
 string Water::getDescription() {

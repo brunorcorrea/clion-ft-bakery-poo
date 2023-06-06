@@ -14,8 +14,8 @@ using namespace std;
 
 class MyProgram {
 private:
-    MyBoolean *verboseMode = NULL;
-    MyBoolean *shortMessageMode = NULL;
+    MyBoolean *verboseMode = nullptr;
+    MyBoolean *shortMessageMode = nullptr;
 
     vector<Food *> myMainList;
 

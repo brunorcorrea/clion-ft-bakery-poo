@@ -3,11 +3,12 @@
 //
 
 #include <string>
+#include <utility>
 #include "Beer.hpp"
 
 using namespace std;
 
-Beer::Beer(double alcoholContent, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
+Beer::Beer(double alcoholContent, string brand, double volume, double cost) : Liquid(std::move(brand), volume, cost) {
     this->alcoholContent = alcoholContent;
 }
 

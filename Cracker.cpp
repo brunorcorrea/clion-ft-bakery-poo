@@ -6,13 +6,14 @@
 */
 
 #include <string>
+#include <utility>
 #include "Food.hpp"
 #include "Cracker.hpp"
 
 using namespace std;
 
 Cracker::Cracker(string type, int amount, double cost) : Food(cost) {
-    this->type = type;
+    this->type = std::move(type);
     this->amount = amount;
 }
 

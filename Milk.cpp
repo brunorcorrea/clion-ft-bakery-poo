@@ -3,12 +3,13 @@
 //
 
 #include <string>
+#include <utility>
 #include "Milk.hpp"
 
 using namespace std;
 
-Milk::Milk(string type, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
-    this->type = type;
+Milk::Milk(string type, string brand, double volume, double cost) : Liquid(std::move(brand), volume, cost) {
+    this->type = std::move(type);
 }
 
 string Milk::getDescription() {

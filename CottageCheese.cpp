@@ -3,13 +3,14 @@
 //
 
 #include <string>
+#include <utility>
 #include "Cheese.hpp"
 #include "CottageCheese.hpp"
 
 using namespace std;
 
-CottageCheese::CottageCheese(string fatContent, string type, float weight, double cost) : Cheese(type, weight, cost) {
-    this->fatContent = fatContent;
+CottageCheese::CottageCheese(string fatContent, string type, float weight, double cost) : Cheese(std::move(type), weight, cost) {
+    this->fatContent = std::move(fatContent);
 }
 
 string CottageCheese::getDescription() {

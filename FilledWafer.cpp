@@ -6,13 +6,14 @@
 */
 
 #include <string>
+#include <utility>
 #include "Cracker.hpp"
 #include "FilledWafer.hpp"
 
 using namespace std;
 
-FilledWafer::FilledWafer(string type, string flavour, int amount, double cost) : Cracker(type, amount, cost) {
-    this->flavour = flavour;
+FilledWafer::FilledWafer(string type, string flavour, int amount, double cost) : Cracker(std::move(type), amount, cost) {
+    this->flavour = std::move(flavour);
 }
 
 string FilledWafer::getDescription() {

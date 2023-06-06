@@ -15,7 +15,7 @@ private:
 public:
     MyBoolean();
 
-    MyBoolean(bool);
+    explicit MyBoolean(bool);
 
     ~MyBoolean();
 

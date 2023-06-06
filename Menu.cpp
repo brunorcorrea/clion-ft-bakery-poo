@@ -6,6 +6,7 @@
 */
 
 #include <string>
+#include <utility>
 #include <vector>
 #include <iostream>
 
@@ -14,8 +15,8 @@
 using namespace std;
 
 Menu::Menu(string title, vector<string> options) {
-    this->title = title;
-    this->options = options;
+    this->title = std::move(title);
+    this->options = std::move(options);
 }
 
 const int Menu::getChoice() {

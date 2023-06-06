@@ -3,13 +3,14 @@
 //
 
 #include <string>
+#include <utility>
 #include "PaleAleBeer.hpp"
 
 using namespace std;
 
 PaleAleBeer::PaleAleBeer(string packaging, double alcoholContent, string brand, double volume, double cost) : Beer(
-        alcoholContent, brand, volume, cost) {
-    this->packaging = packaging;
+        alcoholContent, std::move(brand), volume, cost) {
+    this->packaging = std::move(packaging);
 }
 
 string PaleAleBeer::getDescription() {
