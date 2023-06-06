@@ -13,5 +13,5 @@ Water::Water(string type, string brand, double volume, double cost) : Liquid(std
 }
 
 string Water::getDescription() {
-    return ("Água " + type + " " + brand + " - " + to_string(volume) + " L.");
+    return ("Agua " + type + " " + brand + " - " + to_string(volume) + " L.");
 }

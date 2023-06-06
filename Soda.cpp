@@ -13,5 +13,5 @@ Soda::Soda(string flavour, string brand, double volume, double cost) : Liquid(st
 }
 
 string Soda::getDescription() {
-    return (brand + " " + flavour + " - " + to_string(volume) + " L.");
+    return ("Refrigerante " + brand + " " + flavour + " - " + to_string(volume) + " L.");
 }

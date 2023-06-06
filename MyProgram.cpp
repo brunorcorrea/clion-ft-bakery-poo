@@ -569,7 +569,7 @@ void MyProgram::insertPaleAleBeer() {
     double volume;
     double cost;
 
-    cout << "------------------------------\nInsert Lager Beer:\n------------------------------\n";
+    cout << "------------------------------\nInsert Pale Ale Beer:\n------------------------------\n";
     cout << "Packaging ......: ";
     getline(cin, buffer);
     packagingType = buffer;
@@ -608,7 +608,7 @@ void MyProgram::insertPilsenBeer() {
     double volume;
     double cost;
 
-    cout << "------------------------------\nInsert Lager Beer:\n------------------------------\n";
+    cout << "------------------------------\nInsert Pilsen Beer:\n------------------------------\n";
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;

@@ -14,5 +14,5 @@ CottageCheese::CottageCheese(string fatContent, string type, float weight, doubl
 }
 
 string CottageCheese::getDescription() {
-return ("Queijo cottage " + type + fatContent + "% de gordura " + " - " + to_string(weight) + " Kg.");
+return ("Queijo cottage " + type + " " + fatContent + "% de gordura " + " - " + to_string(weight) + " Kg.");
 }
