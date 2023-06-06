@@ -14,10 +14,10 @@ using namespace std;
 Cracker::Cracker(string type, int amount, double cost) : Food(cost) {
     this->type = type;
     this->amount = amount;
-};
+}
 
 string Cracker::getDescription() {
     return ("Bolacha " + type + " - " + to_string(amount) + " un/pacote.");
-};
+}
 
 /* fim de arquivo */

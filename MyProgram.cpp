@@ -11,7 +11,6 @@
 #include "Information.hpp"
 #include "MyBoolean.hpp"
 #include "Menu.hpp"
-#include "Food.hpp"
 #include "Bread.hpp"
 #include "Cracker.hpp"
 #include "FilledWafer.hpp"
@@ -30,25 +29,25 @@
 using namespace std;
 
 void MyProgram::process() {
-    vector<string> opcoes({"Exit", "List Database", "Insert Items"});
-    Menu menu("Main Menu", opcoes);
-    int escolha = -1;
+    vector<string> options({"Exit", "List Database", "Insert Items"});
+    Menu menu("Main Menu", options);
+    int choice = -1;
 
-    while (escolha) {
-        escolha = menu.getChoice();
+    while (choice) {
+        choice = menu.getChoice();
 
-        switch (escolha) {
+        switch (choice) {
             case 1: {
                 listItems();
-            };
+            }
                 break;
             case 2: {
                 insertItems();
-            };
+            }
                 break;
-        };
-    };
-};
+        }
+    }
+}
 
 void MyProgram::clearAll() {
     myMainList.clear();
@@ -59,13 +58,13 @@ void MyProgram::clearAll() {
         delete (*scan);
         *scan = NULL;
         scan++;
-    };
+    }
 
     delete verboseMode;
     delete shortMessageMode;
     verboseMode = NULL;
     shortMessageMode = NULL;
-};
+}
 
 void MyProgram::listItems() {
     double total = 0.00;
@@ -78,9 +77,9 @@ void MyProgram::listItems() {
              << (*scan)->getCost() << endl;
         total += (*scan)->getCost();
         scan++;
-    };
+    }
     cout << "  Total cost: US$ " << fixed << setprecision(2) << total << endl;
-};
+}
 
 void MyProgram::insertItems() {
     cout << "------------------------------\nInset New Items:\n------------------------------\n";
@@ -88,59 +87,59 @@ void MyProgram::insertItems() {
     Menu menu("Insert Items",
               {"Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella", "Milk",
                "Water", "Soda", "Beer"});
-    int escolha = -1;
+    int choice = -1;
 
-    while (escolha) {
-        escolha = menu.getChoice();
+    while (choice) {
+        choice = menu.getChoice();
 
-        switch (escolha) {
+        switch (choice) {
             case 1: {
                 insertBread();
-            };
+            }
                 break;
             case 2: {
                 insertCheese();
-            };
+            }
                 break;
             case 3: {
                 insertCottageCheese();
-            };
+            }
                 break;
             case 4: {
                 insertCracker();
-            };
+            }
                 break;
             case 5: {
                 insertFilledWafer();
-            };
+            }
                 break;
             case 6: {
                 insertHam();
-            };
+            }
                 break;
             case 7: {
                 insertMortadella();
-            };
+            }
                 break;
             case 8: {
                 insertMilk();
-            };
+            }
                 break;
             case 9: {
                 insertWater();
-            };
+            }
                 break;
             case 10: {
                 insertSoda();
-            };
+            }
                 break;
             case 11: {
                 insertBeer();
-            };
+            }
                 break;
-        };
-    };
-};
+        }
+    }
+}
 
 void MyProgram::insertBread() {
     Bread *bread;
@@ -168,7 +167,7 @@ void MyProgram::insertBread() {
     myMainList.insert(myMainList.end(), bread);
 
     cout << endl << bread->getDescription() << " - US$ " << fixed << setprecision(2) << bread->getCost() << endl;
-};
+}
 
 void MyProgram::insertCheese() {
     Cheese *cheese;
@@ -196,7 +195,7 @@ void MyProgram::insertCheese() {
     myMainList.insert(myMainList.end(), cheese);
 
     cout << endl << cheese->getDescription() << " - US$ " << fixed << setprecision(2) << cheese->getCost() << endl;
-};
+}
 
 void MyProgram::insertCottageCheese() {
     CottageCheese *cottageCheese;
@@ -230,7 +229,7 @@ void MyProgram::insertCottageCheese() {
 
     cout << endl << cottageCheese->getDescription() << " - US$ " << fixed << setprecision(2) << cottageCheese->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertCracker() {
     Cracker *cracker;
@@ -258,7 +257,7 @@ void MyProgram::insertCracker() {
     myMainList.insert(myMainList.end(), cracker);
 
     cout << endl << cracker->getDescription() << " - US$ " << fixed << setprecision(2) << cracker->getCost() << endl;
-};
+}
 
 void MyProgram::insertFilledWafer() {
     FilledWafer *filledWafer;
@@ -292,7 +291,7 @@ void MyProgram::insertFilledWafer() {
 
     cout << endl << filledWafer->getDescription() << " - US$ " << fixed << setprecision(2) << filledWafer->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertHam() {
     Ham *ham;
@@ -320,7 +319,7 @@ void MyProgram::insertHam() {
     myMainList.insert(myMainList.end(), ham);
 
     cout << endl << ham->getDescription() << " - US$ " << fixed << setprecision(2) << ham->getCost() << endl;
-};
+}
 
 void MyProgram::insertMortadella() {
     Mortadella *mortadella;
@@ -349,7 +348,7 @@ void MyProgram::insertMortadella() {
 
     cout << endl << mortadella->getDescription() << " - US$ " << fixed << setprecision(2) << mortadella->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertMilk() {
     Milk *milk;
@@ -464,22 +463,22 @@ void MyProgram::insertBeer() {
         switch (escolha) {
             case 1: {
                 insertBockBeer();
-            };
+            }
                 break;
             case 2: {
                 insertLagerBeer();
-            };
+            }
                 break;
             case 3: {
                 insertPaleAleBeer();
-            };
+            }
                 break;
             case 4: {
                 insertPilsenBeer();
-            };
+            }
                 break;
-        };
-    };
+        }
+    }
 }
 
 void MyProgram::insertBockBeer() {
@@ -519,7 +518,7 @@ void MyProgram::insertBockBeer() {
 
     cout << endl << bockBeer->getDescription() << " - US$ " << fixed << setprecision(2) << bockBeer->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertLagerBeer() {
     LagerBeer *lagerBeer;
@@ -558,7 +557,7 @@ void MyProgram::insertLagerBeer() {
 
     cout << endl << lagerBeer->getDescription() << " - US$ " << fixed << setprecision(2) << lagerBeer->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertPaleAleBeer() {
     PaleAleBeer *paleAleBeer;
@@ -597,7 +596,7 @@ void MyProgram::insertPaleAleBeer() {
 
     cout << endl << paleAleBeer->getDescription() << " - US$ " << fixed << setprecision(2) << paleAleBeer->getCost()
          << endl;
-};
+}
 
 void MyProgram::insertPilsenBeer() {
     PilsenBeer *pilsenBeer;
@@ -636,7 +635,7 @@ void MyProgram::insertPilsenBeer() {
 
     cout << endl << pilsenBeer->getDescription() << " - US$ " << fixed << setprecision(2) << pilsenBeer->getCost()
          << endl;
-};
+}
 
 MyBoolean *MyProgram::getVerboseMode() const {
     return verboseMode;
@@ -656,7 +655,7 @@ void MyProgram::setShortMessageMode(MyBoolean *value) {
 
 void MyProgram::start(string programName) {
     myMainList.clear();
-    Information::wellcome("C++ Program " + string(programName) + " running!", shortMessageMode->getStatus());
+    Information::welcome("C++ Program " + string(programName) + " running!", shortMessageMode->getStatus());
     process();
     Information::bye(shortMessageMode->getStatus());
     clearAll();

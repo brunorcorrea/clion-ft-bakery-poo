@@ -7,10 +7,10 @@
 
 #include "MyBoolean.hpp"
 
-   MyBoolean::MyBoolean()            { booleanValue = false;  };
-   MyBoolean::MyBoolean(bool value ) { booleanValue = value;  };
-   MyBoolean::~MyBoolean()           { booleanValue = false;  };
+   MyBoolean::MyBoolean()            { booleanValue = false;  }
+   MyBoolean::MyBoolean(bool value ) { booleanValue = value;  }
+   MyBoolean::~MyBoolean()           { booleanValue = false;  }
    
-   const bool MyBoolean::getStatus()  { return(booleanValue);  };
+   const bool MyBoolean::getStatus()  { return(booleanValue);  }
 
 /* fim de arquivo */

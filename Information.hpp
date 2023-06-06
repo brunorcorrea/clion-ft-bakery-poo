@@ -25,9 +25,9 @@ class Information
       static const string getAuthor();
       static const string getDate();
       
-      static const void wellcome();
-      static const void wellcome(string message);
-      static const void wellcome(string message, bool shortMessage);
+      static const void welcome();
+      static const void welcome(string message);
+      static const void welcome(string message, bool shortMessage);
       static const void bye();
       static const void bye(bool shortMessage);
    };

@@ -9,8 +9,8 @@ using namespace std;
 
 Milk::Milk(string type, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
     this->type = type;
-};
+}
 
 string Milk::getDescription() {
     return ("Leite " + type + " " + brand + " - " + to_string(volume) + " L.");
-};
+}

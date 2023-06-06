@@ -16,32 +16,32 @@ const string Information::author      = "Prof. Dr. Andre F. de Angelis";
 const string Information::date        = "Mar/2016";
 const string Information::decoration  = "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\n";
 
-const string Information::getInstitution() { return (institution); };
-const string Information::getDept()        { return (dept);        };
-const string Information::getAuthor()      { return (author);      };
-const string Information::getDate()        { return (date);        };
+const string Information::getInstitution() { return (institution); }
+const string Information::getDept()        { return (dept);        }
+const string Information::getAuthor()      { return (author);      }
+const string Information::getDate()        { return (date);        }
 
-const void Information::wellcome()
+const void Information::welcome()
    {
-   wellcome("");
-   };
+       welcome("");
+   }
 
-const void Information::wellcome(string message)
+const void Information::welcome(string message)
    {
-   wellcome(message, false);
-   };
+       welcome(message, false);
+   }
    
-const void Information::wellcome(string message, bool shortMessage)
+const void Information::welcome(string message, bool shortMessage)
    {
    if(!shortMessage)
       {
       cout << decoration;
       cout << Information::getInstitution() << "\n" << Information::getDept() << "\n";
       cout << Information::getAuthor() << "\n" << Information::getDate() << "\n";
-      };
+      }
    cout << decoration;
    cout << message << endl;
-   };
+   }
    
 const void Information::bye()
    {
@@ -51,7 +51,7 @@ const void Information::bye()
    cout << "Mission accomplished! \n";
    cout << decoration;
    cout << "\n\n" << endl;
-   };
+   }
 
 const void Information::bye(bool shortMessage)
    {
@@ -62,7 +62,7 @@ const void Information::bye(bool shortMessage)
    else
       {
       bye();
-      };
-   };
+      }
+   }
    
 /* fim de arquivo */

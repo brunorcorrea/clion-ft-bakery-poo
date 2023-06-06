@@ -11,8 +11,8 @@ BockBeer::BockBeer(string type, double alcoholContent, string brand, double volu
                                                                                                         brand, volume,
                                                                                                         cost) {
     this->type = type;
-};
+}
 
 string BockBeer::getDescription() {
     return ("Cerveja Bock " + type + " " + brand + " " + to_string(alcoholContent) + "% - " + to_string(volume) + " L.");
-};
+}

@@ -16,7 +16,7 @@ using namespace std;
 Menu::Menu(string title, vector<string> options) {
     this->title = title;
     this->options = options;
-};
+}
 
 const int Menu::getChoice() {
     int result = -1;
@@ -34,17 +34,17 @@ const int Menu::getChoice() {
             cout << auxiliar << ". " << *scan << "\n";
             scan++;
             auxiliar++;
-        };
+        }
 
         cout << "------------------------------\n" << "Escolha entre 0 e " << (auxiliar - 1)
              << "\n------------------------------\n";
         buffer = "0";
         getline(cin, buffer);
         result = stoi(buffer);
-    };
+    }
 
     return (result);
-};
+}
 
 
 /* fim de arquivo */

@@ -14,10 +14,10 @@ using namespace std;
 Bread::Bread(string type, float weight, double cost) : Food(cost) {
     this->type = type;
     this->weight = weight;
-};
+}
 
 string Bread::getDescription() {
     return ("Pao " + type + " - " + to_string(weight) + " Kg.");
-};
+}
 
 /* fim de arquivo */

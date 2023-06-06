@@ -9,8 +9,8 @@ using namespace std;
 
 Soda::Soda(string flavour, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
     this->flavour = flavour;
-};
+}
 
 string Soda::getDescription() {
     return (brand + " " + flavour + " - " + to_string(volume) + " L.");
-};
+}
