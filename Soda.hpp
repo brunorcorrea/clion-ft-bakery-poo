@@ -17,7 +17,7 @@ private:
 public:
     Soda(string, string, double, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

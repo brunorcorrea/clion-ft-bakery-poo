@@ -17,7 +17,7 @@ protected:
 public:
     Beer(double, string, double, double);
 
-    virtual string getDescription();
+    string getDescription() override;
 };
 
 #endif

@@ -21,7 +21,7 @@ private:
 public:
     Cracker(string, int, double);
 
-    virtual string getDescription();
+    string getDescription() override;
 };
 
 #endif

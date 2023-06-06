@@ -18,7 +18,7 @@ protected:
 public:
     Cheese(string, float, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

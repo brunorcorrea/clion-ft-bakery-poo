@@ -18,7 +18,7 @@ private:
 public:
     Mortadella(string, float, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

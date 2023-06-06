@@ -21,7 +21,7 @@ private:
 public:
     Bread(string, float, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

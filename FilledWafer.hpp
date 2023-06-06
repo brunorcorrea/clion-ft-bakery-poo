@@ -20,7 +20,7 @@ private:
 public:
     FilledWafer(string, string, int, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

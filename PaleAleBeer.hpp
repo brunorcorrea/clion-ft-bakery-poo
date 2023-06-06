@@ -17,7 +17,7 @@ private:
 public:
     PaleAleBeer(string, double, string, double, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

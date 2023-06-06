@@ -18,7 +18,7 @@ private:
 public:
     Ham(string, float, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif

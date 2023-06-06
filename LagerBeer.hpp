@@ -17,7 +17,7 @@ private:
 public:
     LagerBeer(string, double, string, double, double);
 
-    string getDescription();
+    string getDescription() override;
 };
 
 #endif
