@@ -23,7 +23,7 @@ public:
 
     virtual string getDescription() = 0;
 
-    virtual ~Food();
+    virtual ~Food() = 0;
 };
 
 #endif

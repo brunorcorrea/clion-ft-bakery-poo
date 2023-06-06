@@ -17,6 +17,4 @@ double Food::getCost() {
     return (cost);
 }
 
-Food::~ Food() = default;
-
 /* fim de arquivo */
