@@ -9,7 +9,7 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    MyProgram *myProgram = new MyProgram();
+    auto *myProgram = new MyProgram();
 
     FT_bakery::verifyArguments(argc, argv, myProgram);
 

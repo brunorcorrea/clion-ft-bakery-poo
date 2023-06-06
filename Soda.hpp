@@ -12,12 +12,12 @@ using namespace std;
 
 class Soda : public Liquid {
 private:
-    string sabor;
+    string flavour;
 
 public:
     Soda(string, string, double, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

@@ -12,7 +12,7 @@ using namespace std;
 
 class Liquid : public Food {
 protected:
-    string marca;
+    string brand;
     double volume;
 
 public:

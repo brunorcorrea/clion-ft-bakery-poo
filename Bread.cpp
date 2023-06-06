@@ -11,13 +11,13 @@
 
 using namespace std;
 
-Bread::Bread(string tipo, float peso, double valor) : Food(valor) {
-    this->tipo = tipo;
-    this->peso = peso;
+Bread::Bread(string type, float weight, double cost) : Food(cost) {
+    this->type = type;
+    this->weight = weight;
 };
 
-string Bread::getDescricao() {
-    return ("Pao " + tipo + " - " + to_string(peso) + " Kg.");
+string Bread::getDescription() {
+    return ("Pao " + type + " - " + to_string(weight) + " Kg.");
 };
 
 /* fim de arquivo */

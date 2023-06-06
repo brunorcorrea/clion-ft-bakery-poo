@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Milk::Milk(string tipo, string marca, double volume, double valor) : Liquid(marca, volume, valor) {
-    this->tipo = tipo;
+Milk::Milk(string type, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
+    this->type = type;
 };
 
-string Milk::getDescricao() {
-    return ("Leite " + tipo + " " + marca + " - " + to_string(volume) + " L.");
+string Milk::getDescription() {
+    return ("Leite " + type + " " + brand + " - " + to_string(volume) + " L.");
 };

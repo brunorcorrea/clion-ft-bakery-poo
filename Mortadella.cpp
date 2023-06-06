@@ -8,11 +8,11 @@
 
 using namespace std;
 
-Mortadella::Mortadella(string tipo, float peso, double valor) : Food(valor) {
-    this->tipo = tipo;
-    this->peso = peso;
+Mortadella::Mortadella(string type, float weight, double cost) : Food(cost) {
+    this->type = type;
+    this->weight = weight;
 };
 
-string Mortadella::getDescricao() {
-    return ("Mortadela " + tipo + " - " + to_string(peso) + " Kg.");
+string Mortadella::getDescription() {
+    return ("Mortadela " + type + " - " + to_string(weight) + " Kg.");
 };

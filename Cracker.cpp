@@ -11,13 +11,13 @@
 
 using namespace std;
 
-Cracker::Cracker(string tipo, int unidades, double valor) : Food(valor) {
-    this->tipo = tipo;
-    this->unidades = unidades;
+Cracker::Cracker(string type, int amount, double cost) : Food(cost) {
+    this->type = type;
+    this->amount = amount;
 };
 
-string Cracker::getDescricao() {
-    return ("Bolacha " + tipo + " - " + to_string(unidades) + " un/pacote.");
+string Cracker::getDescription() {
+    return ("Bolacha " + type + " - " + to_string(amount) + " un/pacote.");
 };
 
 /* fim de arquivo */

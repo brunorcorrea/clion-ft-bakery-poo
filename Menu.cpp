@@ -13,24 +13,24 @@
 
 using namespace std;
 
-Menu::Menu(string titulo, vector<string> opcoes) {
-    this->titulo = titulo;
-    this->opcoes = opcoes;
+Menu::Menu(string title, vector<string> options) {
+    this->title = title;
+    this->options = options;
 };
 
-const int Menu::getEscolha() {
+const int Menu::getChoice() {
     int result = -1;
     int auxiliar;
     string buffer;
 
-    auto scan = opcoes.begin();
+    auto scan = options.begin();
 
-    while ((result < 0) || (result > opcoes.size() - 1)) {
-        scan = opcoes.begin();
+    while ((result < 0) || (result > options.size() - 1)) {
+        scan = options.begin();
         auxiliar = 0;
-        cout << "\n------------------------------\n" << titulo << "\n------------------------------\n";
+        cout << "\n------------------------------\n" << title << "\n------------------------------\n";
 
-        while (scan != opcoes.end()) {
+        while (scan != options.end()) {
             cout << auxiliar << ". " << *scan << "\n";
             scan++;
             auxiliar++;

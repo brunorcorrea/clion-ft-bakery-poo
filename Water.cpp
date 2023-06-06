@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Water::Water(string nome, string marca, double volume, double valor) : Liquid(marca, volume, valor) {
-    this->nome = nome;
+Water::Water(string type, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
+    this->type = type;
 };
 
-string Water::getDescricao() {
-    return ("Água " + nome + " " + marca + " - " + to_string(volume) + " L.");
+string Water::getDescription() {
+    return ("Água " + type + " " + brand + " - " + to_string(volume) + " L.");
 };

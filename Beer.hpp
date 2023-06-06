@@ -12,12 +12,12 @@ using namespace std;
 
 class Beer : public Liquid {
 protected:
-    double teorAlcoolico;
+    double alcoholContent;
 
 public:
     Beer(double, string, double, double);
 
-    virtual string getDescricao();
+    virtual string getDescription();
 };
 
 #endif

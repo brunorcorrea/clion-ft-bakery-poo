@@ -9,12 +9,12 @@
 
 using namespace std;
 
-Food::Food(double valor) {
-    this->valor = valor;
+Food::Food(double cost) {
+    this->cost = cost;
 };
 
-double Food::getValor() {
-    return (valor);
+double Food::getCost() {
+    return (cost);
 }
 
 Food::~ Food() = default;

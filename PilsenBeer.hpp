@@ -12,12 +12,12 @@ using namespace std;
 
 class PilsenBeer : public Beer {
 private:
-    string tipo;
+    string type;
 
 public:
     PilsenBeer(string, double, string, double, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

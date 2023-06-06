@@ -7,12 +7,12 @@
 
 using namespace std;
 
-PilsenBeer::PilsenBeer(string tipo, double teorAlcoolico, string marca, double volume, double valor) : Beer(
-        teorAlcoolico, marca, volume, valor) {
-    this->tipo = tipo;
+PilsenBeer::PilsenBeer(string type, double alcoholContent, string brand, double volume, double cost) : Beer(
+        alcoholContent, brand, volume, cost) {
+    this->type = type;
 };
 
-string PilsenBeer::getDescricao() {
-    return ("Cerveja Pilsen " + tipo + " " + marca + " " + to_string(teorAlcoolico) + "% - " + to_string(volume) +
+string PilsenBeer::getDescription() {
+    return ("Cerveja Pilsen " + type + " " + brand + " " + to_string(alcoholContent) + "% - " + to_string(volume) +
             " L.");
 };

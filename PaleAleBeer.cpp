@@ -7,12 +7,12 @@
 
 using namespace std;
 
-PaleAleBeer::PaleAleBeer(string tipoEmbalagem, double teorAlcoolico, string marca, double volume, double valor) : Beer(
-        teorAlcoolico, marca, volume, valor) {
-    this->tipoEmbalagem = tipoEmbalagem;
+PaleAleBeer::PaleAleBeer(string packaging, double alcoholContent, string brand, double volume, double cost) : Beer(
+        alcoholContent, brand, volume, cost) {
+    this->packaging = packaging;
 };
 
-string PaleAleBeer::getDescricao() {
-    return ("Cerveja Pale Ale " + tipoEmbalagem + " " + marca + " " + to_string(teorAlcoolico) + "% - " +
+string PaleAleBeer::getDescription() {
+    return ("Cerveja Pale Ale " + packaging + " " + brand + " " + to_string(alcoholContent) + "% - " +
             to_string(volume) + " L.");
 };

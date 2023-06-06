@@ -8,11 +8,11 @@
 
 using namespace std;
 
-Ham::Ham(string tipo, float peso, double valor) : Food(valor) {
-    this->tipo = tipo;
-    this->peso = peso;
+Ham::Ham(string type, float weight, double cost) : Food(cost) {
+    this->type = type;
+    this->weight = weight;
 };
 
-string Ham::getDescricao() {
-    return ("Presunto " + tipo + " - " + to_string(peso) + " Kg.");
+string Ham::getDescription() {
+    return ("Presunto " + type + " - " + to_string(weight) + " Kg.");
 };

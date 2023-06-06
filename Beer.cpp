@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Beer::Beer(double teorAlcoolico, string marca, double volume, double valor) : Liquid(marca, volume, valor) {
-    this->teorAlcoolico = teorAlcoolico;
+Beer::Beer(double alcoholContent, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
+    this->alcoholContent = alcoholContent;
 };
 
-string Beer::getDescricao() {
-    return ("Cerveja " + marca + " " + to_string(teorAlcoolico) + "% - " + to_string(volume) + " L.");
+string Beer::getDescription() {
+    return ("Cerveja " + brand + " " + to_string(alcoholContent) + "% - " + to_string(volume) + " L.");
 };

@@ -7,10 +7,10 @@
 
 using namespace std;
 
-Soda::Soda(string sabor, string marca, double volume, double valor) : Liquid(marca, volume, valor) {
-    this->sabor = sabor;
+Soda::Soda(string flavour, string brand, double volume, double cost) : Liquid(brand, volume, cost) {
+    this->flavour = flavour;
 };
 
-string Soda::getDescricao() {
-    return (marca + " " + sabor + " - " + to_string(volume) + " L.");
+string Soda::getDescription() {
+    return (brand + " " + flavour + " - " + to_string(volume) + " L.");
 };

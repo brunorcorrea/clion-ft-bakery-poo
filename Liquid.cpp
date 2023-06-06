@@ -8,7 +8,7 @@
 
 using namespace std;
 
-Liquid::Liquid(string marca, double volume, double valor) : Food(valor) {
+Liquid::Liquid(string brand, double volume, double cost) : Food(cost) {
     this->volume = volume;
-    this->marca = marca;
+    this->brand = brand;
 }

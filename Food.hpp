@@ -14,14 +14,14 @@ using namespace std;
 
 class Food {
 protected:
-    double valor;
+    double cost;
 
 public:
     Food(double);
 
-    virtual double getValor();
+    virtual double getCost();
 
-    virtual string getDescricao() = 0;
+    virtual string getDescription() = 0;
 
     virtual ~Food();
 };

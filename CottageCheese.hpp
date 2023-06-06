@@ -12,13 +12,12 @@ using namespace std;
 
 class CottageCheese : public Cheese {
 private:
-    string tipo;
-    float peso;
+    string fatContent;
 
 public:
-    CottageCheese(string, float, double);
+    CottageCheese(string, string, float, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

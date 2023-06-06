@@ -7,12 +7,12 @@
 
 using namespace std;
 
-BockBeer::BockBeer(string tipo, double teorAlcoolico, string marca, double volume, double valor) : Beer(teorAlcoolico,
-                                                                                                        marca, volume,
-                                                                                                        valor) {
-    this->tipo = tipo;
+BockBeer::BockBeer(string type, double alcoholContent, string brand, double volume, double cost) : Beer(alcoholContent,
+                                                                                                        brand, volume,
+                                                                                                        cost) {
+    this->type = type;
 };
 
-string BockBeer::getDescricao() {
-    return ("Cerveja Bock " + tipo + " " + marca + " " + to_string(teorAlcoolico) + "% - " + to_string(volume) + " L.");
+string BockBeer::getDescription() {
+    return ("Cerveja Bock " + type + " " + brand + " " + to_string(alcoholContent) + "% - " + to_string(volume) + " L.");
 };

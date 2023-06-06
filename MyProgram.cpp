@@ -35,7 +35,7 @@ void MyProgram::process() {
     int escolha = -1;
 
     while (escolha) {
-        escolha = menu.getEscolha();
+        escolha = menu.getChoice();
 
         switch (escolha) {
             case 1: {
@@ -74,9 +74,9 @@ void MyProgram::listItems() {
     auto scan = myMainList.begin();
 
     while (scan != myMainList.end()) {
-        cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2)
-             << (*scan)->getValor() << endl;
-        total += (*scan)->getValor();
+        cout << "  @ " << setw(20) << (*scan)->getDescription() << "\n\tUS$ " << fixed << setprecision(2)
+             << (*scan)->getCost() << endl;
+        total += (*scan)->getCost();
         scan++;
     };
     cout << "  Total cost: US$ " << fixed << setprecision(2) << total << endl;
@@ -91,7 +91,7 @@ void MyProgram::insertItems() {
     int escolha = -1;
 
     while (escolha) {
-        escolha = menu.getEscolha();
+        escolha = menu.getChoice();
 
         switch (escolha) {
             case 1: {
@@ -153,18 +153,21 @@ void MyProgram::insertBread() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
     cout << "Weight ....: ";
     getline(cin, buffer);
     weight = stof(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     bread = new Bread(type, weight, cost);
     myMainList.insert(myMainList.end(), bread);
 
-    cout << endl << bread->getDescricao() << " - US$ " << fixed << setprecision(2) << bread->getValor() << endl;
+    cout << endl << bread->getDescription() << " - US$ " << fixed << setprecision(2) << bread->getCost() << endl;
 };
 
 void MyProgram::insertCheese() {
@@ -178,24 +181,28 @@ void MyProgram::insertCheese() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
     cout << "Weight ....: ";
     getline(cin, buffer);
     weight = stof(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     cheese = new Cheese(type, weight, cost);
     myMainList.insert(myMainList.end(), cheese);
 
-    cout << endl << cheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cheese->getValor() << endl;
+    cout << endl << cheese->getDescription() << " - US$ " << fixed << setprecision(2) << cheese->getCost() << endl;
 };
 
 void MyProgram::insertCottageCheese() {
     CottageCheese *cottageCheese;
     string buffer;
     string type;
+    string fatContent;
     float weight;
     double cost;
 
@@ -203,18 +210,25 @@ void MyProgram::insertCottageCheese() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
+    cout << "Fat Content: ";
+    getline(cin, buffer);
+    fatContent = buffer;
+
     cout << "Weight ....: ";
     getline(cin, buffer);
     weight = stof(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
-    cottageCheese = new CottageCheese(type, weight, cost);
+    cottageCheese = new CottageCheese(fatContent, type, weight, cost);
     myMainList.insert(myMainList.end(), cottageCheese);
 
-    cout << endl << cottageCheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cottageCheese->getValor()
+    cout << endl << cottageCheese->getDescription() << " - US$ " << fixed << setprecision(2) << cottageCheese->getCost()
          << endl;
 };
 
@@ -229,18 +243,21 @@ void MyProgram::insertCracker() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
     cout << "Amount ....: ";
     getline(cin, buffer);
     amount = stoi(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     cracker = new Cracker(type, amount, cost);
     myMainList.insert(myMainList.end(), cracker);
 
-    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;
+    cout << endl << cracker->getDescription() << " - US$ " << fixed << setprecision(2) << cracker->getCost() << endl;
 };
 
 void MyProgram::insertFilledWafer() {
@@ -253,21 +270,27 @@ void MyProgram::insertFilledWafer() {
 
     cout << "------------------------------\nInsert Filled Wafer:\n------------------------------\n";
     cout << "Type ......: ";
-    getline(cin, type);
+    getline(cin, buffer);
+    type = buffer;
+
     cout << "Filling ...: ";
-    getline(cin, filling);
+    getline(cin, buffer);
+    filling = buffer;
+
     cout << "Amount ....: ";
     getline(cin, buffer);
     amount = stoi(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     filledWafer = new FilledWafer(type, filling, amount, cost);
     myMainList.insert(myMainList.end(), filledWafer);
 
-    cout << endl << filledWafer->getDescricao() << " - US$ " << fixed << setprecision(2) << filledWafer->getValor()
+    cout << endl << filledWafer->getDescription() << " - US$ " << fixed << setprecision(2) << filledWafer->getCost()
          << endl;
 };
 
@@ -282,18 +305,21 @@ void MyProgram::insertHam() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
     cout << "Weight ....: ";
     getline(cin, buffer);
     weight = stof(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     ham = new Ham(type, weight, cost);
     myMainList.insert(myMainList.end(), ham);
 
-    cout << endl << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;
+    cout << endl << ham->getDescription() << " - US$ " << fixed << setprecision(2) << ham->getCost() << endl;
 };
 
 void MyProgram::insertMortadella() {
@@ -307,18 +333,21 @@ void MyProgram::insertMortadella() {
     cout << "Type ......: ";
     getline(cin, buffer);
     type = buffer;
+
     cout << "Weight ....: ";
     getline(cin, buffer);
     weight = stof(buffer);
+
     cout << "Cost ......: ";
     getline(cin, buffer);
     cost = stod(buffer);
+
     cin.clear();
 
     mortadella = new Mortadella(type, weight, cost);
     myMainList.insert(myMainList.end(), mortadella);
 
-    cout << endl << mortadella->getDescricao() << " - US$ " << fixed << setprecision(2) << mortadella->getValor()
+    cout << endl << mortadella->getDescription() << " - US$ " << fixed << setprecision(2) << mortadella->getCost()
          << endl;
 };
 
@@ -352,7 +381,7 @@ void MyProgram::insertMilk() {
     milk = new Milk(type, brand, volume, cost);
     myMainList.insert(myMainList.end(), milk);
 
-    cout << endl << milk->getDescricao() << " - US$ " << fixed << setprecision(2) << milk->getValor()
+    cout << endl << milk->getDescription() << " - US$ " << fixed << setprecision(2) << milk->getCost()
          << endl;
 }
 
@@ -386,7 +415,7 @@ void MyProgram::insertWater() {
     water = new Water(name, brand, volume, cost);
     myMainList.insert(myMainList.end(), water);
 
-    cout << endl << water->getDescricao() << " - US$ " << fixed << setprecision(2) << water->getValor()
+    cout << endl << water->getDescription() << " - US$ " << fixed << setprecision(2) << water->getCost()
          << endl;
 }
 
@@ -420,7 +449,7 @@ void MyProgram::insertSoda() {
     soda = new Soda(flavour, brand, volume, cost);
     myMainList.insert(myMainList.end(), soda);
 
-    cout << endl << soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor()
+    cout << endl << soda->getDescription() << " - US$ " << fixed << setprecision(2) << soda->getCost()
          << endl;
 }
 
@@ -430,7 +459,7 @@ void MyProgram::insertBeer() {
     int escolha = -1;
 
     while (escolha) {
-        escolha = menu.getEscolha();
+        escolha = menu.getChoice();
 
         switch (escolha) {
             case 1: {
@@ -488,7 +517,7 @@ void MyProgram::insertBockBeer() {
     bockBeer = new BockBeer(type, alcoholContent, brand, volume, cost);
     myMainList.insert(myMainList.end(), bockBeer);
 
-    cout << endl << bockBeer->getDescricao() << " - US$ " << fixed << setprecision(2) << bockBeer->getValor()
+    cout << endl << bockBeer->getDescription() << " - US$ " << fixed << setprecision(2) << bockBeer->getCost()
          << endl;
 };
 
@@ -527,7 +556,7 @@ void MyProgram::insertLagerBeer() {
     lagerBeer = new LagerBeer(style, alcoholContent, brand, volume, cost);
     myMainList.insert(myMainList.end(), lagerBeer);
 
-    cout << endl << lagerBeer->getDescricao() << " - US$ " << fixed << setprecision(2) << lagerBeer->getValor()
+    cout << endl << lagerBeer->getDescription() << " - US$ " << fixed << setprecision(2) << lagerBeer->getCost()
          << endl;
 };
 
@@ -566,7 +595,7 @@ void MyProgram::insertPaleAleBeer() {
     paleAleBeer = new PaleAleBeer(packagingType, alcoholContent, brand, volume, cost);
     myMainList.insert(myMainList.end(), paleAleBeer);
 
-    cout << endl << paleAleBeer->getDescricao() << " - US$ " << fixed << setprecision(2) << paleAleBeer->getValor()
+    cout << endl << paleAleBeer->getDescription() << " - US$ " << fixed << setprecision(2) << paleAleBeer->getCost()
          << endl;
 };
 
@@ -605,7 +634,7 @@ void MyProgram::insertPilsenBeer() {
     pilsenBeer = new PilsenBeer(type, alcoholContent, brand, volume, cost);
     myMainList.insert(myMainList.end(), pilsenBeer);
 
-    cout << endl << pilsenBeer->getDescricao() << " - US$ " << fixed << setprecision(2) << pilsenBeer->getValor()
+    cout << endl << pilsenBeer->getDescription() << " - US$ " << fixed << setprecision(2) << pilsenBeer->getCost()
          << endl;
 };
 

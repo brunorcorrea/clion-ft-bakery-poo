@@ -8,11 +8,10 @@
 
 using namespace std;
 
-CottageCheese::CottageCheese(string tipo, float peso, double valor) : Cheese(tipo, peso, valor) {
-    this->tipo = tipo;
-    this->peso = peso;
+CottageCheese::CottageCheese(string fatContent, string type, float weight, double cost) : Cheese(type, weight, cost) {
+    this->fatContent = fatContent;
 };
 
-string CottageCheese::getDescricao() {
-    return ("Queijo cottage " + tipo + " - " + to_string(peso) + " Kg.");
+string CottageCheese::getDescription() {
+return ("Queijo cottage " + type + fatContent + "% de gordura " + " - " + to_string(weight) + " Kg.");
 };

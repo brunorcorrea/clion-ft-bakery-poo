@@ -15,13 +15,13 @@ using namespace std;
 
 class Cracker : public Food {
 private:
-    string tipo;
-    int unidades;
+    string type;
+    int amount;
 
 public:
     Cracker(string, int, double);
 
-    virtual string getDescricao();
+    virtual string getDescription();
 };
 
 #endif

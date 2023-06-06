@@ -12,13 +12,13 @@ using namespace std;
 
 class Mortadella : public Food {
 private:
-    string tipo;
-    float peso;
+    string type;
+    float weight;
 
 public:
     Mortadella(string, float, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

@@ -15,13 +15,13 @@ using namespace std;
 
 class Bread : public Food {
 private:
-    string tipo;
-    float peso;
+    string type;
+    float weight;
 
 public:
     Bread(string, float, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

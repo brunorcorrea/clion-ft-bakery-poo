@@ -6,24 +6,24 @@
 */
 
 #ifndef MENU_HPP
-   #define MENU_HPP
+#define MENU_HPP
 
 #include <string>
 #include <vector>
 
 using namespace std;
 
-class Menu
-   {
-   private:
-      string titulo;
-      vector<string> opcoes;
+class Menu {
+private:
+    string title;
+    vector<string> options;
 
-   public:
-      Menu(string titulo, vector<string> opcoes);
-      const virtual int getEscolha();
-   };
-   
+public:
+    Menu(string, vector<string>);
+
+    const virtual int getChoice();
+};
+
 #endif
-   
+
 /* fim de arquivo */

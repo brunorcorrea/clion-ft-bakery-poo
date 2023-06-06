@@ -12,12 +12,12 @@ using namespace std;
 
 class Water : public Liquid {
 private:
-    string nome;
+    string type;
 
 public:
     Water(string, string, double, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

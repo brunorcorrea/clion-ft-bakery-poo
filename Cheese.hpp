@@ -11,14 +11,14 @@
 using namespace std;
 
 class Cheese : public Food {
-private:
-    string tipo;
-    float peso;
+protected:
+    string type;
+    float weight;
 
 public:
     Cheese(string, float, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif

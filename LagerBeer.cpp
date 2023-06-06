@@ -7,12 +7,12 @@
 
 using namespace std;
 
-LagerBeer::LagerBeer(string estilo, double teorAlcoolico, string marca, double volume, double valor) : Beer(
-        teorAlcoolico, marca, volume, valor) {
-    this->estilo = estilo;
+LagerBeer::LagerBeer(string style, double alcoholContent, string brand, double volume, double cost) : Beer(
+        alcoholContent, brand, volume, cost) {
+    this->style = style;
 };
 
-string LagerBeer::getDescricao() {
-    return ("Cerveja Lager " + estilo + " " + marca + " " + to_string(teorAlcoolico) + "% - " + to_string(volume) +
+string LagerBeer::getDescription() {
+    return ("Cerveja Lager " + style + " " + brand + " " + to_string(alcoholContent) + "% - " + to_string(volume) +
             " L.");
 };

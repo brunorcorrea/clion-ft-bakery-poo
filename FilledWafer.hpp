@@ -15,12 +15,12 @@ using namespace std;
 
 class FilledWafer : public Cracker {
 private:
-    string recheio;
+    string flavour;
 
 public:
     FilledWafer(string, string, int, double);
 
-    string getDescricao();
+    string getDescription();
 };
 
 #endif
